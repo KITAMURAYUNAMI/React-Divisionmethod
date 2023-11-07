@@ -3,9 +3,9 @@ import { Stylebtn } from "./Stylebtn";
 
 
 export const Secondbtm = (props) =>{
-    const {children} = props;
+    const {children,onClick} = props;
     return(
-        <SButton>{children}</SButton>
+        <SButton onClick={onClick}>{children}</SButton>
     )
 }
 
