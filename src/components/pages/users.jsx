@@ -5,12 +5,12 @@ import { UserCode } from "../organisms/user/usercard";
 const users =[...Array(10).keys()].map(((val) =>{
     return{
     id:val,
-    name:`雨宮${val}`,
+    name:`西園寺${val}`,
     image:"https://source.unsplash.com/NE0XGVKTmcA",
-    email:"reito180202@gmail.com",
-    phone:"08089090202",
+    email:"json@aaa.com",
+    phone:"05092378604",
     conpany:{
-      name:"雨宮会社"
+      name:"東出カンパニー"
     },
     website:"https://aaa"
   };
@@ -18,7 +18,7 @@ const users =[...Array(10).keys()].map(((val) =>{
 }))
 
 export const Users =()=>{
-    const state = useLocation();
+    const { state } = useLocation();
     const isAdmin = state ? State.isAdmin:false;
     return(
         <SContainer>
