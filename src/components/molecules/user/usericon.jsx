@@ -1,12 +1,12 @@
 import styled from "styled-components"
 
 export const UserIcohnwithName = (props) =>{
-    const {image,name,isAdomin}=props;
+    const {image,name,isAdmin}=props;
     return(
         <SCon>
             <SImage  height={160} width={160} src={image} alt={name} />
             <SName>{name}</SName>
-            {isAdomin && <SEdit>編集</SEdit>}
+            {isAdmin && <SEdit>編集</SEdit>}
         </SCon>
     )
 }
